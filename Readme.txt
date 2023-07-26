@@ -9,6 +9,9 @@ eMail: jaime.duque@uva.es
 Roberto Medina Aparicio, Luis Miguel González Rodrigo
 CARTIF Foundation, División de Sistemas Industriales y Digitales, Parque Tecnológico de Boecillo, 47151 Valladolid, Spain
 
+MIT License
+Copyright (c) 2023 Duque-Domingo, Jaime; Medina Aparicio, Roberto; González Rodrigo, Luis Miguel
+
 Abstract (from our Pattern Recognition paper)
 One Shot Learning includes all those techniques that allow to classify images using a single image per category. One of its possible applications is the identification of food products. In the case of a food store, it is interesting to record a single image of each product and to be able to recognize it again from other images, such as photos taken by customers. Within deep learning, Siamese neural networks are able to verify whether two images belong to the same category or not.
 This code shows the classification experiments carried out in our paper on Pattern Recognition for the One Shot Learning problem. It uses a new Siamese network training technique, called CP-CVV, which uses the combination of different models trained with different classes. The separation of the validation classes has been done in such a way that each of the combined models is different to avoid overfitting with respect to validation. Unlike normal training, the test images belong to classes that have not been previously used in training, which allows the model to work with new categories, of which only one image exists. Different backbones have been evaluated in the Siamese composition, but also the integration of multiple models with different backbones. The results show that the model improves on previous works and allows the classification problem to be solved, a further step towards the use of Siamese networks.
